@@ -14,7 +14,6 @@ import {
 } from "./features/auth";
 import { AwsModule } from "./features/aws/aws.module";
 import { MoviesModule } from "./features/movies/movies.module";
-import { ProgramsModule } from "./features/programs/programs.module";
 import { UsersModule } from "./features/users/users.module";
 
 @Module({
@@ -32,7 +31,6 @@ import { UsersModule } from "./features/users/users.module";
       migrations: [__dirname + "/migrations/*.{ts,js}"],
       ...envConfig().database,
     }),
-    ProgramsModule,
     UsersModule,
     MoviesModule,
     AwsModule,
