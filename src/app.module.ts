@@ -13,7 +13,6 @@ import {
   JwtRefreshService,
 } from "./features/auth";
 import { AwsModule } from "./features/aws/aws.module";
-import { MailingModule } from "./features/mailing/mailing.module";
 import { MoviesModule } from "./features/movies/movies.module";
 import { ProgramsModule } from "./features/programs/programs.module";
 import { UsersModule } from "./features/users/users.module";
@@ -39,7 +38,6 @@ import { UsersModule } from "./features/users/users.module";
     AwsModule,
     AuthModule,
     JwtAsyncModule,
-    MailingModule,
   ],
   controllers: [AppController],
   providers: [

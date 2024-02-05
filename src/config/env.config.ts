@@ -35,14 +35,6 @@ const envConfig = registerAs('env', () => ({
     jwtRefreshSecret: process.env.JWT_REFRESH_SECRET || '',
     refreshTokenDuration: process.env.REFRESH_TOKEN_EXPIRATION || '',
   },
-  mailhog: {
-    host: process.env.MAILHOG_HOST || '',
-    port: mapEnvValues.number(process.env.MAILHOG_PORT || '', 0),
-  },
-  mailChimp: {
-    host: process.env.MAIL_CHIMP_HOST || '',
-    apiKey: process.env.MAIL_CHIMP_API_KEY || '',
-  },
   aws: {
     bucketName: process.env.AWS_BUCKET_NAME || '',
     region: process.env.AWS_REGION || '',
