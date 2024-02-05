@@ -1,16 +1,16 @@
-import { Exclude } from 'class-transformer';
-import { BaseEntity, Column, Entity, PrimaryColumn } from 'typeorm';
+import { Exclude } from "class-transformer";
+import { BaseEntity, Column, Entity, PrimaryColumn } from "typeorm";
 
-import { UserRole, UserStatus } from '../../auth/enums';
+import { UserRole, UserStatus } from "../../auth/enums";
 
-@Entity({ name: 'users' })
+@Entity({ name: "users" })
 export class User extends BaseEntity {
   constructor(partial: Partial<User>) {
     super();
     Object.assign(this, partial);
   }
 
-  @PrimaryColumn({ type: 'uuid', generated: 'uuid' })
+  @PrimaryColumn({ type: "uuid", generated: "uuid" })
   id: string;
 
   @Column({ unique: true })
