@@ -42,6 +42,7 @@ export class MoviesRepository extends ElementaryRepository<Movie> {
       relations: ["user"],
       take: limit,
       skip: offset,
+      order: { createdAt: "DESC" },
     });
 
     return movies;
