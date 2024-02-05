@@ -12,7 +12,7 @@ export class PaginationDto {
 
   @ApiPropertyOptional({
     minimum: 1,
-    default: 7,
+    default: 8,
     type: "number",
   })
   perPage = defaultPerPage;
